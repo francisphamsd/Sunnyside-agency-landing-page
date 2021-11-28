@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+:root {
+  /* Primary */
+  --clr-pr-red: hsl(7, 99%, 70%);
+  --clr-pr-yellow: hsl(51, 100%, 49%);
+  --clr-pr-dark-cyan: hsl(167, 40%, 24%); /* (graphic design text) */
+  --clr-pr-blue: hsl(198, 62%, 26%); /* (photography text) */
+  --clr-pr-light-cyan: hsl(168, 34%, 41%); /* (footer) */
+
+  /* Neutral */
+  --clr-neu-dark-blue: hsl(212, 27%, 19%);
+  --clr-neu-light-blue: hsl(232, 10%, 55%);
+  --clr-neu-dark-gray: hsl(213, 9%, 39%);
+  --clr-neu-light-gray: hsl(210, 4%, 67%);
+  --clr-neu-white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --ff-barlow: "Barlow", sans-serif;
+  --ff-fraunces: "Fraunces", serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
