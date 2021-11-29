@@ -17,6 +17,7 @@
   /* Fonts */
   --ff-barlow: "Barlow", sans-serif;
   --ff-fraunces: "Fraunces", serif;
+  font-size: 62.5%;
 }
 
 *,
@@ -27,6 +28,81 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--ff-barlow);
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--ff-fraunces);
+  line-height: 1;
+  /* font-weight: 700; */
+  font-weight: 900;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 27em) {
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .service-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-testimonial {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Header */
+.header-container {
+  background-image: url("../images/mobile/image-header.jpg");
+}
 /* Attribution */
 .attribution {
   font-size: 11px;
